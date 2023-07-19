@@ -13,7 +13,7 @@ con.query('SELECT *FROM EMPLOYEE', function (error, results, fields) {
         
 });
 const record = {
-    ID : "A19" ,
+   
     dNAME : "sandy",
     SALARY : 33000,
     AGE :25
@@ -27,13 +27,14 @@ con.query(insertQuery,record,(error, results)=>{
 
 })
 
-const deleteQuery = 'DELETE FROM EMPLOYEE WHERE ID = "A19"';
+const deleteQuery = 'DELETE FROM EMPLOYEE WHERE ID = "19"';
 con.query(deleteQuery,(error, results)=>{
     if (error) throw error;
     
      console.log('Deleted successfully');
      console.log(' ', results.deleteQuery);
 })
+
 con.end();
 
 
